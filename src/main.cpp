@@ -1,4 +1,4 @@
-// Code to be installed on ESP32 
+// Code to be installed on the ESP32
 #include <Arduino.h>
 #include <DNSServer.h>
 
@@ -10,7 +10,7 @@
 #include <ESPAsyncTCP.h>
 #endif
 
-// Ensure the pins are PWM capable in case you want to change
+// Ensure the pins are PWM capable
 
 int pir_signal = 13;
 int trigger = 19;
