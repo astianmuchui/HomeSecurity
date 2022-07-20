@@ -1,0 +1,143 @@
+:root{
+    --min: rgb(0, 107, 207);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;  
+    background: url("./img3.png") no-repeat center center / cover; 
+    height: 120vh;
+    background-attachment: fixed;
+    z-index: -2;
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+::-webkit-scrollbar{
+    background-color: black;
+    width: 2px;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--min);
+    width: 2px;
+    
+}
+/* FLEX COLUMN  */
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.wrapper{
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.525);
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(3px);   
+}
+
+.hero{
+    text-align: center;
+    height: 300px;
+}
+.hero p{
+    color: #fff;
+    font-size: 25px;
+    font-family: monospace;
+    opacity: 0;
+    position: relative;
+    animation: fade forwards 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+    animation-delay: 1s;
+}
+.btn{
+    opacity: 0;
+    position: relative;
+    color: #fff;
+    background-color: var(--min);
+    font-size: 13px;
+    width: 110px; 
+    height: 44px;
+    text-align: center;  
+    margin-top: 5%;
+    border-radius: 5px;
+    animation: slideUp forwards 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+    animation-delay: 2s;
+}
+
+
+@keyframes
+
+    slideUp
+    {
+        0%{
+            opacity: 0;
+            top: 20px;
+        }
+        100%{
+            opacity: 1;
+            top: 0;
+        }
+    }
+    
+    @keyframes 
+    
+        fade
+        {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }   
+        }
+
+    .modal{
+        width: 100%;
+        height: 100%;
+        z-index: 8;
+        position: fixed;
+        background-attachment: fixed;
+        top: 0;
+        left: 0;
+        /* display: none; */
+    }
+    
+    .modal-content{
+        position: sticky;
+        width: 65%;
+        height: 70%;
+        background-color: rgba(5, 5, 5, 0.932);    
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px 1px rgba(8, 8, 15, 0.89);
+        backdrop-filter: blur(2px);
+        margin: 0 auto;
+
+    }
+    .modal-content > i {
+        position: relative;
+        text-align: center;
+        left: 20px;
+        top: 20px;
+        font-size: 1.2rem;
+        color: #fff;
+        background-color: var(--min);   
+        width: 15px;
+        height: 15px;
+        border-radius: 10%;
+        padding: 3px 3px;
+        cursor: pointer;
+    }
