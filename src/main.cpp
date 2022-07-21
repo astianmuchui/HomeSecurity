@@ -1,4 +1,4 @@
-// Code to be installed on the ESP32
+// Code to be uploaded on the ESP32
 #include <Arduino.h>
 #include <DNSServer.h>
 
@@ -9,6 +9,13 @@
 #include <ESP32WiFi.h>
 #include <ESPAsyncTCP.h>
 #endif
+
+/*
+ TODO:
+ Start web Server 
+ Initialize camera connections 
+ 
+*/
 
 // Ensure the pins are PWM capable
 
