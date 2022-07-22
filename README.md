@@ -1,6 +1,6 @@
 
 # Home Security
-# Intro and Objectives
+# Introduction and Objectives
 This is a project aimed at achieving home security using things like cameras , motion sensors among other components to be added. 
 The core objective is for it to detect motion , and take photos of the room to try and get the intruder then the photos are uploaded to the web 
 where one can log in to their portal and check it. The system also sends the photos to the owner via Email and using pyscript an automated call can be made
