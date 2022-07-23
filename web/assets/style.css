@@ -1,3 +1,5 @@
+/* Css variables 
+*/
 :root{
     --min: rgb(0, 107, 207);
 }
@@ -11,6 +13,7 @@ body{
     background-attachment: fixed;
     z-index: -2;
 }
+/*Resets*/
 
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -147,6 +150,7 @@ body{
         border-radius: 50%;
         cursor: pointer;
     }
+<<<<<<< HEAD
 
 .modal-content h4{
     color: var(--min);
@@ -218,3 +222,5 @@ body{
         opacity: 1; 
     }
 }
+=======
+>>>>>>> da4aa42ce465d3c26e6f190247cb5f61a65aeb0f

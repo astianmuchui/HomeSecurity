@@ -1,5 +1,5 @@
 <?php
-
+    // Emailing file.
     class mail{
         
         private $name = "MD1507";
