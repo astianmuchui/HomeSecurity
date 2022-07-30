@@ -1,5 +1,4 @@
 
-# Home Security
 # Introduction and Objectives
 This is a project aimed at achieving home security using things like cameras , motion sensors among other components to be added. 
 The core objective is for it to detect motion , and take photos of the room to try and get the intruder then the photos are uploaded to the web 
